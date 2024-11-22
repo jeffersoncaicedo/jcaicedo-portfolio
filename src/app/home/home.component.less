@@ -1,0 +1,150 @@
+@bg-color: #D9D9D9;
+@lbl-color: #737373;
+@d-color: #090A18;
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 80vh;
+}
+
+
+.card-contact{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 80vh;
+}
+
+
+.in_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 80%;
+}
+
+
+.basic_info, .title, .btn-cont, .btn-contacto-cont{
+    margin: 25px;
+}
+
+
+.nombre, .puesto{
+    margin-left: 20px;
+    padding: 5px;
+}
+
+
+.img{
+    height: 55px;
+    transition: transform 0.3s ease;
+}
+
+
+.img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.basic_info{
+    width: 50%;
+}
+
+
+.title{
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+.nombre{
+    font-size: 300%;
+    font-weight: lighter;
+}
+
+
+.puesto{
+    line-height: 0.9;
+    font-size: 350%;
+    font-weight: bold;
+}
+
+
+.btn-contacto{
+    padding: 1.8%;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: medium;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.btn-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-text{
+    margin-top: 10%;
+}
+
+
+.btn-contacto:hover{
+    color: #D9D9D9;
+}
+
+
+.btn-contacto::after{
+    content: "";
+    background: #090A18;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+
+}
+
+
+.btn-contacto:hover::after{
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+}
+
+
+.material-icons{
+    padding-left: 7px;
+}
+
+.foto-perf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 25px;
+}
+
+.bg-picture{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+}

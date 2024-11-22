@@ -1,0 +1,155 @@
+.title-text, .subtitle-text, .buttons, .location{
+    margin: 25px;
+}
+
+
+.title-text{
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+.subtitle-text{
+    margin-top: 65px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.btn-contat-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contact-1, .btn-contact-2, .btn-contact-3{
+    margin: 10px;
+    padding-top: 10px;
+    border: 2px black solid;
+    border-radius: 60px;
+    width: 175px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn-contact-1 img, .btn-contact-2 img, .btn-contact-3 img{
+    transition: 0.3s ease-in-out;
+}
+
+
+.btn-contact-1:hover img{
+    content: url('../../assets/whatsapp_inv.svg');
+}
+
+
+.btn-contact-2:hover img{
+    content: url('../../assets/telegram_inv.svg');
+}
+
+
+.btn-contact-3:hover img{
+    content: url('../../assets/email_inv.svg');
+}
+
+
+.btn-contact-1:hover, .btn-contact-2:hover, .btn-contact-3:hover{
+    color: #d9d9d9;
+}
+
+
+.btn-contact-1::after{
+    content: "";
+    background: #090A18;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -100%;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+.btn-contact-2::after{
+    content: "";
+    background: #090A18;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+.btn-contact-3::after{
+    content: "";
+    background: #090A18;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 100%;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+.btn-contact-1:hover::after, .btn-contact-2:hover::after, .btn-contact-3:hover::after{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.icon, .icon-1, .icon-2, .icon-3{
+    height: 30px;
+    margin: 2px;
+}
+
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.location-text{
+    margin: 2px;
+    font-size: large;
+}
+
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 75px;
+}

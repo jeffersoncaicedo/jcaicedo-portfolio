@@ -1,0 +1,64 @@
+<div class="page">
+    <mat-tab-group animationDuration="1500ms" #tabGroup [(selectedIndex)]="index">
+        <!-- Gestión de la página Inicio -->
+        <mat-tab label="Inicio" class="tab-content">
+            <div class="card mat-elevation-z4">
+                <div class="in_content">
+                    <div class="basic_info">
+                        <div class="title">print("Saludos")</div>
+                        <div class>
+                            <p class="nombre">Soy Jefferson,</p>
+                            <p class="puesto">Desarrollador de Software</p>
+                        </div>
+                        <div class="btn-cont">
+                            <span class="btn_img">
+                                <a href="https://www.linkedin.com/in/jeffersoncaicedo/">
+                                    <img src="../../assets/linkedin.svg" class="img">
+                                </a>
+                            </span>
+                            <span class="btn_img">
+                                <a href="https://github.com/jeffersoncaicedo">
+                                    <img src="../../assets/github.svg" class="img">
+                                </a>
+                            </span>
+                        </div>
+                        <div class="btn-contacto-cont">
+                            <button class="btn-contacto" (click)="Contact()">
+                                <div class="btn-content">
+                                    <p class="btn-text">Contáctame</p>
+                                    <i class="material-icons">start</i> 
+                                </div>
+                            </button>                           
+                        </div>
+                    </div>
+                    <div class="foto-perf">
+                        <div class="bg-picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+        <!-- Gestión de la página Sobre Mi -->
+         <mat-tab label="Sobre Mi" class="tab-content">
+            <div class="card-contact mat-elevation-z4">
+                <app-sobre-mi ></app-sobre-mi>
+            </div>
+         </mat-tab>
+        <!-- Gestión de la página Proyectos -->
+        <mat-tab label="Proyectos" class="tab-content">
+            <div class="card mat-elevation-z4">
+                <app-proyectos></app-proyectos>
+            </div>
+        </mat-tab>
+        <!-- Gestión de la página de Contacto -->
+        <mat-tab label="Contacto" class="tab-content">
+            <div class="card-contact mat-elevation-z4">
+                <app-contactos></app-contactos>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>
+
+<!-- <div class="modal-cont" *ngIf="dialog_exist">
+    <app-modal></app-modal>
+</div> -->
