@@ -19,6 +19,7 @@ import { ModalComponent } from './modal/modal.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactosComponent } from './contactos/contactos.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ContactosComponent } from './contactos/contactos.component';
     MatSnackBarModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-    ])
+    ]),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

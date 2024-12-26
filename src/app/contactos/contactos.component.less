@@ -70,61 +70,65 @@
 }
 
 
-.btn-contact-1::after{
+.btn-contact-1::after, .btn-contact-2::after, .btn-contact-3::after{
     content: "";
     background: #090A18;
     position: absolute;
     z-index: -1;
     padding: 16px 20px;
     display: block;
-    left: -100%;
-    right: 100%;
+    left: -20%;
+    right: -20%;
     top: 0;
     bottom: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.6s ease;
+    // -webkit-transition: all 0.35s;
+    // transition: all 0.35s;
 }
 
 
-.btn-contact-2::after{
-    content: "";
-    background: #090A18;
-    position: absolute;
-    z-index: -1;
-    padding: 16px 20px;
-    display: block;
-    left: 0;
-    right: 0;
-    top: 100%;
-    bottom: -100%;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-}
+// .btn-contact-2::after{
+//     content: "";
+//     background: #090A18;
+//     position: absolute;
+//     z-index: -1;
+//     padding: 16px 20px;
+//     display: block;
+//     left: 20%;
+//     right: -20%;
+//     top: 0;
+//     bottom: 0;
+//     -webkit-transition: all 0.35s;
+//     transition: all 0.35s;
+// }
 
 
-.btn-contact-3::after{
-    content: "";
-    background: #090A18;
-    position: absolute;
-    z-index: -1;
-    padding: 16px 20px;
-    display: block;
-    left: 100%;
-    right: -100%;
-    top: 0;
-    bottom: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-}
+// .btn-contact-3::after{
+//     content: "";
+//     background: #090A18;
+//     position: absolute;
+//     z-index: -1;
+//     padding: 16px 20px;
+//     display: block;
+//     left: 100%;
+//     right: -100%;
+//     top: 0;
+//     bottom: 0;
+//     -webkit-transition: all 0.35s;
+//     transition: all 0.35s;
+// }
 
 
 .btn-contact-1:hover::after, .btn-contact-2:hover::after, .btn-contact-3:hover::after{
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // bottom: 0;
+    // -webkit-transition: all 0.35s;
+    // transition: all 0.35s;
+    transition: all 0.6s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
 }
 
 .icon, .icon-1, .icon-2, .icon-3{

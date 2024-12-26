@@ -15,6 +15,8 @@ export class SobreMiComponent implements OnInit{
 
   tabGroup: any;
 
+  public title = "<Sobre mi\\>";
+
   constructor(private homeService: HomeService) {}
 
   ngOnInit(): void {

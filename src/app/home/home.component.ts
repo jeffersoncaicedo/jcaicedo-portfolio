@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit{
 
   index = 0;
 
+  public title = "<Hola, bienvenido\\>";
+
   constructor(private homeService: HomeService) {}
 
   ngOnInit(): void {

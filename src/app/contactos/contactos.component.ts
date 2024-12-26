@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./contactos.component.less']
 })
 export class ContactosComponent {
+  public title = "<Contacto\\>";
 
 }

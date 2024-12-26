@@ -7,5 +7,7 @@ import { HomeService } from '../services/home.service';
   styleUrls: ['./proyectos.component.less']
 })
 export class ProyectosComponent{
+  public title = "<Proyectos\\>"; 
+  public subtitle = "<Skills\\>"
 
 }
